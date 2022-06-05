@@ -6,10 +6,16 @@
 
 :root {
   --white: #FFFFFF;
+  --grad1: rgba(0,255,209,1);
+  --grad2: rgba(194,60,255,1);
+  --gradient: 90deg, var(--grad1) 0%, var(--grad2) 100%;
 
   --gray-100:#e1e1e6;
   --gray-300:#a8a8b3;
-  --gray-900:#121214;
+  --gray-700:#323238;
+  --gray-800:#29292e;
+  --gray-850: #1f2729;
+  --gray-900:#0c0c0c;
 
   --cyan-500: #61dafb;
   --yellow-500:#eba417;
