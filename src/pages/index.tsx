@@ -3,6 +3,8 @@ import Image from 'next/image'
 import styles from './about.module.scss'
 
 export default function Home() {
+  const yearsOld = new Date().getFullYear() - 1997;
+
   return (
     <>
       <Head>
@@ -14,7 +16,7 @@ export default function Home() {
             <section className={styles.about}>
               <div className={styles.title}>
                 <h1>
-                  <span>Ericlys Moreira</span>, 25
+                  <span>Ericlys Moreira</span>, { yearsOld }
                 </h1>
               </div>
                <span>
