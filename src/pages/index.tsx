@@ -22,7 +22,7 @@ export default function Home() {
               </span>
 
               <p>
-                Hi! <em>👋</em>, I&apos;m a <span>Front-end</span> developer, passionate about technology.<br/>
+                Hi! <em>👋</em>, I&apos;m a <span>full stack </span> developer, passionate about technology.<br/>
               </p>
             </section>
 
