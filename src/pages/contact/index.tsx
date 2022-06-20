@@ -3,8 +3,8 @@ import Lottie from 'react-lottie';
 
 import { FaGithub, FaGoogle, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
-import animationData from '../lotties/spaceman.json';
-import { SocialCard } from '../components/SocialCard';
+import animationData from '../../lotties/spaceman.json';
+import { SocialCard } from '../../components/SocialCard';
 
 export default function Contact(){
   const defaultOptions = {
@@ -33,8 +33,8 @@ export default function Contact(){
         <div>
         <Lottie 
         options={defaultOptions}
-          height={'60%'}
-          width={'80%'}
+          height={'40%'}
+          width={'70%'}
         />
         <div className={styles.social}>
           <SocialCard href='https://www.linkedin.com/in/ericlys-moreira-77b803140/' icon={FaLinkedin} text="Linkedin"/>

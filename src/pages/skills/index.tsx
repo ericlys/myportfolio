@@ -1,4 +1,4 @@
-import { SkillCard } from '../components/SkillCard'
+import { SkillCard } from '../../components/SkillCard'
 import styles from './skills.module.scss'
 
 interface skill {
