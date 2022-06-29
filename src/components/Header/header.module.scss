@@ -32,6 +32,10 @@
 
       transition: color 0.2s;
 
+      svg {
+        display: none;
+      }
+
     
       &:hover {
         color: var(--white)
@@ -71,8 +75,22 @@
       margin: 0 auto;
 
       a{
-        font-size: 1rem;
-        padding: 0 1rem;
+        padding: 1.5rem;
+
+        &.active{
+          color: var(--grad2);
+        }
+
+        svg{
+          display: block;
+
+        }
+
+
+        span {
+          display: none;
+        }
+        
       }
     }
   }
