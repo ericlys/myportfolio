@@ -3,7 +3,23 @@ import Image from 'next/image'
 import styles from './about.module.scss'
 
 export default function Home() {
-  const yearsOld = new Date().getFullYear() - 1997;
+  const birthDay = "1997-05-04";
+
+  var date = new Date();
+  var year = date.getFullYear();
+  var month = date.getMonth() + 1;
+  var day = date.getDate();
+  
+  var partesData = birthDay.split("-");
+  var myYear = parseInt(partesData[0]);
+  var myMonth = parseInt(partesData[1]);
+  var myDay = parseInt(partesData[2]);
+  
+  var yearsOld = year - myYear;
+  
+  if (month < myMonth || (month == myMonth && day < myDay)) {
+    yearsOld--;
+  }
 
   return (
     <>
@@ -30,10 +46,11 @@ export default function Home() {
 
             <div className={styles.image}>
               <Image
-                src="/images/eric.jpg" 
+                src="/images/eric.png" 
                 alt="Picture of the author" 
                 width="350" 
                 height="450"
+                objectFit='cover'
               />
             </div>
           </div>
